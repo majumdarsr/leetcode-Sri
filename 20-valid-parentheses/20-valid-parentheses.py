@@ -20,13 +20,11 @@ class Solution:
             if char in char_dict:
                 open_char.append(char)
             elif char in char_dict.values():
-                if open_char:
-                    temp = open_char.pop()
-                    if not char_dict[temp] == char:
-                        return False
+                if open_char and char == char_dict.get(open_char[-1]):
+                    open_char.pop()                    
                 else:
                     return False
-        if not open_char:
-            return True
+                
+        return not open_char
                         
                 
