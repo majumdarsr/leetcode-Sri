@@ -9,5 +9,5 @@ Output: longest prefix
 4. keep count of matched characters.
 5. keep adding matched characters at the end of previous (shorter) prefix.
 6. Whenever mismatch encountered change prefixEnd to True.
-7. return prefix
+7. return prefix[0:count] 
 
