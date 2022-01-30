@@ -21,7 +21,7 @@ class Solution:
             else:
                 return 0
             
-        # main code: find the row containing target  
+        # main code: find the row in matrix containing target  
         row_idx = -1
         for i in range(len(matrix)):
             if target >= matrix[i][0] and target <= matrix[i][-1]:
