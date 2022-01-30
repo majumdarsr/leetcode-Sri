@@ -2,7 +2,7 @@
 
 O(log(N)) Solution:
 
-The sorted array comes with a clockwise rotation of numknown steps
+The sorted array comes with a clockwise rotation of unknown steps
 
 # [ 7, 8 , 9, 1, 2, 3, 4, 5]
         # case 1: mid is at minimum of right sorted array
