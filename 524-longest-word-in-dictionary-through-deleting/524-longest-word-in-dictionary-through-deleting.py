@@ -11,7 +11,15 @@ class Solution:
             else:
                 lenword = len(word) - 1
                 idx = len(s) - 1
-                while idx >= -1 and lenword >= -1:
+                
+                while idx >= 0 and lenword >= 0:
+                    #print(lenword)
+                    if word[lenword] == s[idx]:
+                        lenword -= 1
+                        idx -= 1
+                    else:
+                        idx -= 1
+                    
                     if lenword == -1 and len(word) > len(longest):
                         longest = word
                         break
@@ -19,14 +27,7 @@ class Solution:
                         if word < longest:
                             longest = word
                         break
-                    #print(lenword)
-                    if word[lenword] == s[idx]:
-                        lenword -= 1
-                        idx -= 1
-                    else:
-                        idx -= 1
-        return longest
-
-                
+                    
+        return longest              
                 
         
