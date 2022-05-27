@@ -22,11 +22,10 @@ class Solution:
                     
                     if lenword == -1 and len(word) > len(longest):
                         longest = word
-                        break
+                        
                     elif lenword == -1 and len(word) == len(longest):
                         if word < longest:
                             longest = word
-                        break
                     
         return longest              
                 
